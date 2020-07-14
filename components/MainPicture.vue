@@ -1,24 +1,25 @@
 <template>
   <div>
-  <div class="wrapper">
-    <div class="shadow" />
-    <div class="overlay">
-      <div class="text">
-        Welcome to the Crusty Krabs!
+    <div class="wrapper">
+      <div class="shadow" />
+      <div class="overlay">
+        <div class="text">
+          Welcome to the Krusty Krabs!
+        </div>
+        <div class="reserve-table-button">
+          <ReserveTable />
+        </div>
       </div>
-      <div class="reserve-table-button">
-        <ReserveTable></ReserveTable>
-      </div>
+      <img class="image image__crusty-krabs" src="~/assets/crusty-krab-transparent.png">
+      <img class="image image__background" src="~/assets/background.png">
     </div>
-    <img class="image image__crusty-krabs" src="~/assets/crusty-krab-transparent.png">
-    <img class="image image__background" src="~/assets/background.png">
-  </div>
-  <div style="height: 1000px"></div>
+    <div style="height: 10px" />
   </div>
 </template>
 
 <script>
 import ReserveTable from './Buttons/ReserveTable'
+
 export default {
   components: {
     ReserveTable
@@ -27,7 +28,7 @@ export default {
 </script>
 
 <style scoped>
-  .wrapper{
+  .wrapper {
     position: relative;
     height: 500px;
     overflow: hidden;
@@ -36,11 +37,12 @@ export default {
     justify-content: center;
 
   }
-  .reserve-table-button{
+
+  .reserve-table-button {
     z-index: 2;
   }
 
-  .overlay{
+  .overlay {
     position: absolute;
     border: 1px solid black;
     display: flex;
@@ -50,13 +52,15 @@ export default {
     height: 100%;
     width: 100%;
   }
-  .shadow{
+
+  .shadow {
     background-color: rgba(138, 141, 150, 0.31);
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 1;
   }
+
   .text {
     font-size: 70px;
     z-index: 2;
@@ -65,18 +69,21 @@ export default {
     font-weight: 900;
     margin-bottom: 60px
   }
-  .image{
+
+  .image {
     position: absolute;
     height: 500px;
     width: auto;
   }
-  .image__crusty-krabs{
+
+  .image__crusty-krabs {
     z-index: 1;
     min-height: 200px;
     height: 100%;
 
   }
-  .image__background{
+
+  .image__background {
     z-index: 0;
     height: auto;
     width: 100%;
