@@ -1,26 +1,37 @@
 <template>
   <div>
-    <MainPicture/>
-    <CustomText/>
-<!--    <Map/>-->
+    <MainPicture />
+    <!--    <CustomText />-->
+    <MenuElement />
+    <!--    <MainDishes/>-->
+    <!--    <Map/>-->
   </div>
 </template>
-
 <script>
+import MenuElement from '../components/Menu/MenuElement'
 import MainPicture from '~/components/MainPicture'
 import Map from '~/components/Map'
 import CustomText from '~/components/CustomText'
+import MainDishes from '~/components/SpecialOffers'
 export default {
   components: {
     MainPicture,
     // eslint-disable-next-line vue/no-unused-components
     Map,
-    CustomText
+    // eslint-disable-next-line vue/no-unused-components
+    CustomText,
+    // eslint-disable-next-line vue/no-unused-components
+    MainDishes,
+    // eslint-disable-next-line vue/no-unused-components
+    MenuElement
   }
 }
 </script>
 
-<style>
+<style scoped>
+  body {
+    background-color: rgba(238, 238, 238, 0.94);
+  }
 .container {
   margin: 0 auto;
   min-height: 100vh;

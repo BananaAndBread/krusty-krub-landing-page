@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
+    "aos": "^3.0.0-beta.6",
     "nuxt": "^2.13.0",
     "nuxt-gmaps": "^1.2.4",
     "vue-aos": "^1.0.1",

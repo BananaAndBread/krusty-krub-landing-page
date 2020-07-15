@@ -30,7 +30,7 @@ export default {
 <style scoped>
   .wrapper {
     position: relative;
-    height: 500px;
+    height: 600px;
     overflow: hidden;
     width: 100%;
     display: flex;
@@ -48,9 +48,11 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: space-around;
     flex-direction: column;
     height: 100%;
     width: 100%;
+    text-align: center;
   }
 
   .shadow {
@@ -72,7 +74,6 @@ export default {
 
   .image {
     position: absolute;
-    height: 500px;
     width: auto;
   }
 
@@ -86,6 +87,7 @@ export default {
   .image__background {
     z-index: 0;
     height: auto;
+    min-height: 600px;
     width: 100%;
     min-width: 1000px;
     max-width: 2000px;
