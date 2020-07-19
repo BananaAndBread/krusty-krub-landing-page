@@ -1,4 +1,4 @@
-# sponge-bob
+# krusty-krubs
 
 ## Build Setup
 
