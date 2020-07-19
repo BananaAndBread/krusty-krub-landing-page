@@ -1,22 +1,25 @@
 <template>
   <div
-data-aos="fade-up"
-       data-aos-delay="500"
-       data-aos-once="true"
-class="card">
-  <h2 class="title">The most popular restaurant in Bikini Bottom
-  </h2>
-   <p class="subtitle">Try our best food:
-   </p>
+    data-aos="fade-up"
+    data-aos-delay="500"
+    data-aos-once="true"
+    class="card"
+  >
+    <h2 class="title">
+      The most popular restaurant in Bikini Bottom
+    </h2>
+    <p class="subtitle">
+      Try our best food:
+    </p>
   </div>
 </template>
 
 <script>
 export default {
+  components: {},
   data () {
     return {}
-  },
-  components: {}
+  }
 }
 </script>
 

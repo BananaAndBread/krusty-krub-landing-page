@@ -3,21 +3,21 @@
     <div class="grid">
       <div class="dish">
         <div class="dummy"></div>
-        <img src="~/assets/menu/krusty-krab-pizza.png" class="image__dish">
+        <img src="~/static/menu/krusty-krab-pizza.png" class="image__dish">
       </div>
       <div class="text">
         X
       </div>
       <div class="dish">
         <div class="dummy"></div>
-        <img src="~/assets/menu/krusty-krab-pizza.png" class="image__dish">
+        <img src="~/static/menu/krusty-krab-pizza.png" class="image__dish">
       </div>
       <div class="text">
         X
       </div>
       <div class="dish">
         <div class="dummy"></div>
-        <img src="~/assets/menu/krusty-krab-pizza.png" class="image__dish">
+        <img src="~/static/menu/krusty-krab-pizza.png" class="image__dish">
       </div>
       <div class="text">
         X

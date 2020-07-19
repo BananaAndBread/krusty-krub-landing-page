@@ -1,13 +1,19 @@
 <template>
-  <div class="image-container">
-    <div class="dummy" />
-    <img src="~/assets/menu/krusty-krab-pizza.png" class="image">
+  <div :style="{width: width}">
+    <div class="image-container">
+      <div class="dummy" />
+      <img :src="require('@/static/menu/' + imageSrc)" class="image">
+    </div>
   </div>
 </template>
-
+s
 <script>
 export default {
-  name: 'RoundedImage'
+  name: 'RoundedImage',
+  props: {
+    width: String,
+    imageSrc: String
+  }
 }
 </script>
 
@@ -32,5 +38,6 @@ export default {
     display: flex;
     justify-self: stretch;
     align-self: stretch;
+    width: 100%;
   }
 </style>

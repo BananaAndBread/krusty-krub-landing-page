@@ -35,7 +35,6 @@ export default {
     width: 100%;
     display: flex;
     justify-content: center;
-
   }
 
   .reserve-table-button {
@@ -75,13 +74,13 @@ export default {
   .image {
     position: absolute;
     width: auto;
+    align-self: center;
   }
 
   .image__crusty-krabs {
     z-index: 1;
     min-height: 200px;
     height: 100%;
-
   }
 
   .image__background {

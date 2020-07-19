@@ -35,14 +35,15 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    { src: '@/plugins/aos', ssr: false }
+    { src: '@/plugins/aos', ssr: false },
+    '@plugins/vuetify'
   ],
   /*
   ** Auto import components
   ** See https://nuxtjs.org/api/configuration-components
   */
   components: true,
-  /*
+  /*    { src: '@plugins/css-element-queries', ssr: false }
   ** Nuxt.js dev-modules
   */
   buildModules: [
@@ -57,7 +58,8 @@ export default {
     '@nuxtjs/axios',
     ['nuxt-gmaps', {
       key: 'AIzaSyAWAfn6nvdJh6ffdZUQ0NT8rRM5bOuQApQ'
-    }]
+    }],
+    'nuxt-svg-loader'
   ],
   /*
   ** Axios module configuration
@@ -69,5 +71,6 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+    transpile: ['vue-responsive-components']
   }
 }

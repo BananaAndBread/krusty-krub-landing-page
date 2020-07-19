@@ -16,10 +16,14 @@
     "aos": "^3.0.0-beta.6",
     "nuxt": "^2.13.0",
     "nuxt-gmaps": "^1.2.4",
+    "nuxt-svg-loader": "^1.2.0",
     "vue-aos": "^1.0.1",
-    "vue2-google-maps": "^0.10.7"
+    "vue-responsive-components": "^0.2.3",
+    "vue2-google-maps": "^0.10.7",
+    "vuetify": "^2.0.0"
   },
   "devDependencies": {
+    "@mdi/font": "^5.3.45",
     "@nuxtjs/eslint-config": "^3.0.0",
     "@nuxtjs/eslint-module": "^2.0.0",
     "babel-eslint": "^10.1.0",
