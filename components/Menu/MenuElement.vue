@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div :class="{[size]: true, 'container': true}">
     <div class="image">
       <RoundedImage :image-src="info.image" width="150px" />
     </div>
@@ -48,6 +48,7 @@ export default {
     }
   },
   mounted () {
+    console.log(this.size)
   }
 }
 </script>
@@ -59,11 +60,11 @@ export default {
     align-items: center;
     display: flex;
   }
-  .container.small{
+  .container.sm{
     display: flex;
     flex-direction: column;
   }
-  .container.small .image{
+  .container.sm .image{
     align-self: start;
   }
   .name{
@@ -97,10 +98,10 @@ export default {
     justify-self: start;
 
   }
-  .container.small .text{
+  .container.sm .text{
     margin-left: 0;
   }
-  .container.small .name{
+  .container.sm .name{
     margin-top: 0.25em;
     margin-bottom: 0.25em;
   }

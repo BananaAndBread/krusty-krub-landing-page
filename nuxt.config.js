@@ -59,7 +59,19 @@ export default {
     ['nuxt-gmaps', {
       key: 'AIzaSyAWAfn6nvdJh6ffdZUQ0NT8rRM5bOuQApQ'
     }],
-    'nuxt-svg-loader'
+    'nuxt-svg-loader',
+    [
+      'nuxt-mq',
+      {
+        defaultBreakpoint: 'sm',
+        breakpoints: {
+          exsm: 500,
+          sm: 801,
+          md: 1250,
+          lg: Infinity
+        }
+      }
+    ]
   ],
   /*
   ** Axios module configuration

@@ -16,21 +16,21 @@
 
       <template slot="tab-content-desserts">
         <div class="center">
-          <div class="menu">
-            <MenuElement v-for="menuElement in Menu.desserts" :key="menuElement.name" :info="menuElement" class="menu-element" />
+          <div :class="{menu: true, [$mq]: true}">
+            <MenuElement :size="$mq" v-for="menuElement in Menu.desserts" :key="menuElement.name" :info="menuElement" class="menu-element" />
           </div>
         </div>
       </template>
       <template slot="tab-content-main">
         <div class="center">
-          <div class="menu">
-            <MenuElement v-for="menuElement in Menu.main" :key="menuElement.name" :info="menuElement" class="menu-element" />
+          <div :class="{menu: true, [$mq]: true}">
+            <MenuElement :size="$mq" v-for="menuElement in Menu.main" :key="menuElement.name" :info="menuElement" class="menu-element" />
           </div>
         </div>
       </template>
       <template slot="tab-content-drinks">
         <div class="center">
-          <div class="menu">
+          <div :class="{menu: true, [$mq]: true}">
             <MenuElement v-for="menuElement in Menu.drinks" :key="menuElement.name" :info="menuElement" class="menu-element" />
           </div>
         </div>
@@ -64,6 +64,7 @@ export default {
   },
   mounted () {
     this.Menu = Menu
+    console.log(this.$mq)
   }
 
 }
@@ -77,6 +78,9 @@ export default {
   }
   .menu-element{
     /*margin: 2em;*/
+  }
+  .menu.exsm{
+    grid-template-columns: 1fr;
   }
   .svg-style {
     width: 50px;
