@@ -12,7 +12,7 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
   button {
     background: rgba(15, 17, 164, 0.25);
     border: 2px solid #fff;

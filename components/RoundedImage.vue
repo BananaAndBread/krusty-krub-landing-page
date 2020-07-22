@@ -2,17 +2,23 @@
   <div :style="{width: width}">
     <div class="image-container">
       <div class="dummy" />
-      <img :src="require('@/static/menu/' + imageSrc)" class="image">
+      <img :src="require('@/static/' + imageSrc)" class="image" v-bind:style="{'border-radius': borderRadius}">
     </div>
   </div>
 </template>
-s
 <script>
 export default {
   name: 'RoundedImage',
   props: {
     width: String,
-    imageSrc: String
+    imageSrc: {
+      type: String,
+      default: 'krusty-krab-inside.png'
+    },
+    borderRadius: {
+      type: String,
+      default: '5%'
+    }
   }
 }
 </script>

@@ -70,11 +70,13 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .menu{
     display: grid;
     width: 85%;
     grid-template-columns: 1fr 1fr;
+    padding-top: 3em;
+    padding-bottom: 3em;
   }
   .menu-element{
     /*margin: 2em;*/
@@ -91,5 +93,6 @@ export default {
   .center{
     display: flex;
     justify-content: center;
+    border: none;
   }
 </style>

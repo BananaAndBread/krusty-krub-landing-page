@@ -1,7 +1,8 @@
 <template>
   <div :class="{[size]: true, 'container': true}">
     <div class="image">
-      <RoundedImage :image-src="info.image" width="150px" />
+<!--      TODO: get rid out of width prop crutch-->
+      <RoundedImage :image-src="'menu/'+info.image" :width="this.$mq='exsm'?'100px':'150px'" />
     </div>
     <div class="text">
       <h3 class="name">
@@ -41,10 +42,7 @@ export default {
     },
     size: {
       type: String,
-      default: '',
-      validator (value) {
-        return ['small', 'extraSmall', ''].includes(value)
-      }
+      default: ''
     }
   },
   mounted () {

@@ -4,10 +4,10 @@
       <div class="shadow" />
       <div class="overlay">
         <div class="text">
-          Welcome to the Krusty Krabs!
+          Welcome to the Krusty Krab!
         </div>
         <div class="reserve-table-button">
-          <ReserveTable />
+          <ReserveTable onclick="location.href='#reservation'" />
         </div>
       </div>
       <img class="image image__crusty-krabs" src="~/assets/crusty-krab-transparent.png">

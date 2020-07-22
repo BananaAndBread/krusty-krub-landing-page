@@ -7,6 +7,7 @@
         </div>
       </div>
     </div>
+    <hr>
     <div class="tab-contents">
       <div v-for="tab in tabs" :key="tab" :style="{display: tab===activeTab?'block':'none'}" :class="{'tab-content': true}">
         <slot :name="'tab-content-'+tab" />
@@ -44,15 +45,21 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
   .center{
     display: flex;
     justify-content: center;
-    border-bottom: solid gray 1px;
+  }
+  hr{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: rgb(229, 232, 234) 1px solid;
   }
   .tabs{
-    display: flex;
+    display: flex !important;
+    flex-direction: row;
   }
   .tab{
     margin-left: 1em;
@@ -72,6 +79,6 @@ export default {
   }
   .tab-active {
     border-bottom: rgb(219, 154, 100) 1px solid;
-    color: rgb(219, 154, 100);;
+    color: rgb(219, 154, 100);
   }
 </style>
