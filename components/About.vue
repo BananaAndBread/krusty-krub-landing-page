@@ -6,7 +6,7 @@
       <p>
         The Krusty Krab is known for being established to sell the Krabby Patty burger.
         The Krabby Patty was invented by King Krabs, an ancestor of restaurant-founder Eugene H.
-        Krabs  The recipe was kept secret for over 800 years, but now you can taste Krabby Patty
+        Krabs. The recipe was kept secret for over 800 years, but now you can taste Krabby Patty
         EXCLUSIVELY in Krusty Krab!
       </p>
       <p>

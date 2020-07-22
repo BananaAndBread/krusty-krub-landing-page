@@ -78,6 +78,7 @@ export default {
 </style>
 
 <style>
+  /*Nu eto tozhe vrode ne ochen*/
   .reserve-table-button-form button{
     background: rgb(219, 154, 100);
     width: 100% !important;
