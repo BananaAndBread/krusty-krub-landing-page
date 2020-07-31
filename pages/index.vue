@@ -11,11 +11,32 @@
       </template>
     </CustomText>
     <Menu />
-    <!--    <MainDishes/>-->
-    <!--    <Map/>-->
+    <CustomText class="text">
+      <template slot="title">
+        Special offers
+      </template>
+      <template slot="subtitle">
+        2020
+      </template>
+    </CustomText>
+    <div class="special-offers">
+      <SpecialOffers />
+    </div>
     <Card>
-      <ReservationForm id="reservation" />
+<!--      <template slot="above">-->
+<!--        <CustomText class="text">-->
+<!--          <template slot="title">-->
+<!--            Reservation-->
+<!--          </template>-->
+<!--          <template slot="subtitle">-->
+<!--          </template>-->
+<!--        </CustomText>-->
+<!--      </template>-->
+      <template slot="inside">
+        <ReservationForm id="reservation" />
+      </template>
     </Card>
+    <Map></Map>
     <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
   </div>
 </template>
@@ -28,7 +49,7 @@ import About from '../components/About'
 import MainPicture from '~/components/MainPicture'
 import Map from '~/components/Map'
 import CustomText from '~/components/CustomText'
-import MainDishes from '~/components/SpecialOffers'
+import SpecialOffers from '~/components/SpecialOffers'
 export default {
   components: {
     About,
@@ -40,10 +61,10 @@ export default {
     // eslint-disable-next-line vue/no-unused-components
     CustomText,
     // eslint-disable-next-line vue/no-unused-components
-    MainDishes,
     // eslint-disable-next-line vue/no-unused-components
     MenuElement,
     ReservationForm,
+    SpecialOffers,
     Card
   }
 }
@@ -57,5 +78,11 @@ export default {
   .text{
     margin-top: 72px;
   }
-
+  .special-offers{
+    margin-top: 5em;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5em;
+  }
 </style>

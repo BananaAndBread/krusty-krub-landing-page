@@ -36,6 +36,7 @@
         </div>
       </template>
     </Tab>
+    <hr>
   </div>
 </template>
 
@@ -94,5 +95,11 @@ export default {
     display: flex;
     justify-content: center;
     border: none;
+  }
+  hr{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: rgb(229, 232, 234) 1px solid;
   }
 </style>

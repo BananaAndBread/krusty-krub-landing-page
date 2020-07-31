@@ -1,32 +1,41 @@
 <template>
   <div class="center">
     <div class="grid">
-      <div class="dish">
-        <div class="dummy"></div>
-        <img src="~/static/menu/krusty-krab-pizza.png" class="image__dish">
+      <RoundedImage :imageSrc="'specialOffers/' + specialOffers[0]['image']" border-radius="0">
+      </RoundedImage>
+      <div class="arrow-up">
       </div>
       <div class="text">
-        X
+        {{ specialOffers[2]["description"] }}
       </div>
-      <div class="dish">
-        <div class="dummy"></div>
-        <img src="~/static/menu/krusty-krab-pizza.png" class="image__dish">
-      </div>
+      <RoundedImage :imageSrc="'specialOffers/' + specialOffers[1]['image']" border-radius="0"></RoundedImage>
       <div class="text">
-        X
+        {{ specialOffers[0]["description"]}}
       </div>
-      <div class="dish">
-        <div class="dummy"></div>
-        <img src="~/static/menu/krusty-krab-pizza.png" class="image__dish">
-      </div>
+      <RoundedImage :imageSrc="'specialOffers/' + specialOffers[2]['image']" border-radius="0"></RoundedImage>
       <div class="text">
-        X
+        {{ specialOffers[1]["description"]}}
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import RoundedImage from './RoundedImage'
+import specialOffers from '~/assets/specialOffers.js'
+export default {
+  components:
+    { RoundedImage },
+  mounted () {
+    console.log(specialOffers)
+  },
+  data () {
+    return {
+      specialOffers
+    }
+  }
+}
+
 </script>
 
 <style scoped>
@@ -52,20 +61,22 @@
   .text {
     display: flex;
     margin: 10px;
+    font-family: Poppins, sans-serif;
+  }
+  .arrow-up {
+    width: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+    position: absolute;
   }
 
-  .dummy{
-    margin-top: 100%;
-  }
-  .image__dish{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    object-fit: cover;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
+  .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+
+    border-top: 20px solid #f00;
   }
 </style>

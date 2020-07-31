@@ -1,7 +1,8 @@
 <template>
   <div class="background">
+    <slot name="above"/>
     <div :class="{card: true, [this.$mq]: true}">
-      <slot />
+      <slot name="inside"/>
     </div>
   </div>
 </template>
