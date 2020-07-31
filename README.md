@@ -1,5 +1,6 @@
 # krusty-krubs
-
+(in progress)
+Live: https://nuxt-krusty-krub.herokuapp.com/
 ## Build Setup
 
 ```bash
