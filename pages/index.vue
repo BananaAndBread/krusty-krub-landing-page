@@ -13,7 +13,7 @@
     <Menu />
     <CustomText class="text">
       <template slot="title">
-        Special offers
+        Special offers (in progress)
       </template>
       <template slot="subtitle">
         2020
