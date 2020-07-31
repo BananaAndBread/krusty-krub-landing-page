@@ -42,7 +42,7 @@ export default {
 </script>
 
 <style scoped>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  /*@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');*/
   .center.lg{
     display: grid;
     grid-template-columns: 1fr 1fr;

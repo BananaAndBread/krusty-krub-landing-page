@@ -50,7 +50,7 @@ export default {
 </script>
 
 <style scoped>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  /*@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');*/
   body {
     background-color: rgba(238, 238, 238, 0.94);
   }
